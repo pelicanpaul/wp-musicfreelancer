@@ -1,0 +1,502 @@
+/*
+Theme Name: Music Freelancer
+Theme URI: http://www.paullyons.info
+Author: Paul Lyons
+Author URI: http://www.paullyons.info
+Description: 2014
+Version: 1.0
+License:
+License URI:
+Tags:
+Text Domain:
+
+
+/**
+ * 1.0 Reset
+ * -----------------------------------------------------------------------------
+ */
+
+body {
+    background: url(/wp-content/uploads/2015/01/background-pattern-dark-825x510.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+p {
+    line-height: 2;
+}
+
+.date-cool {
+    color: #999;
+    margin: 16px 0;
+}
+
+/*layout*/
+
+/* Custom container */
+.container-full {
+    margin: 0 auto;
+    width: 100%;
+
+}
+
+.container {
+    margin: 0 auto;
+}
+
+.container-page-full {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+
+}
+
+.attachment-post-thumbnail {
+    min-height: 100%;
+    min-width: 1024px;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -9999;
+}
+
+header {
+    margin: 0;
+    padding: 10px;
+    background: rgba(0,0,0,0.85)  ;
+    min-height: 50px;
+}
+
+a.navbar-brand {
+    display:block;
+    margin: 20px 0 0 20px;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 300px;
+}
+
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 300px;
+    color: #5b7293;
+    padding:40px 30px;
+    background: rgba(0,0,0,0.6)  ;
+    min-height: 60px;
+}
+
+.social {
+    float: right;
+    color: #5b7293;
+
+}
+
+.social-text {
+    height: 30px;
+    float:left;
+    font-weight: 600;
+    padding: 4px 10px
+}
+
+.social-icons {
+
+    height: 30px;
+    float:left;
+}
+
+.social-icons .fa {
+    margin: 0 10px 0 0;
+}
+
+.container-footer {
+    background-color: #000;
+    border-radius: 4px;
+    height: auto;
+    min-height: 50px;
+    padding: 16px;
+
+    bottom: 10px;
+}
+
+.copyright {
+    float: left;
+}
+
+.container-list-footer {
+    float: left;
+}
+
+.bottom-article {
+     color: #aaa;
+     font-size: 0.8em;
+ }
+
+.bottom-article .fa {
+    margin: 0 8px 0 0;
+}
+
+ul.meta-post{
+    list-style-type: none;
+    margin: 20px 0;
+    background-color: #000;
+    padding: 10px 0;
+    height: 40px;
+
+}
+
+ul.meta-post li{
+   float: left;
+   padding: 0 10px 0 10px;
+
+}
+
+.muted {
+    color: #aaa;
+}
+
+
+ul.meta-post a {
+    color: #aaa;
+
+}
+
+ul.meta-post li+li{
+    border-left: 1px solid #777;
+
+}
+
+h3#comments {
+    font-size: 1.3em;
+}
+
+.comment-author .avatar {
+    display:none;
+}
+
+.breadcrumb {
+    padding: 8px 15px;
+    margin-bottom: 20px;
+    list-style: none;
+    background-color: transparent;
+    border-radius: 4px;
+    color: #999;
+}
+
+.sidebar {
+    margin-top: 80px;
+}
+
+.gallery img {
+    border: 1px solid #555 !important;
+}
+.gallery-item {
+    float: left;
+    margin: 5px 0;
+    text-align: center;
+    width: 33%;
+}
+
+.gallery-caption {
+    color: #999;
+    font-size: 0.8em;
+    margin-top: 5px;
+}
+
+
+h2 {
+
+    position:relative;
+    padding:10px 5px;
+    border-bottom:1px solid rgba(255,255,255,0.3);
+    display: inline-block;
+    width: 100%;
+    color: rgba(255,255,255,0.75);
+    font-family: 'Abril Fatface', cursive;
+
+}
+
+h3 {
+
+    position:relative;
+    padding:10px 5px;
+    border-bottom:1px solid rgba(255,255,255,0.3);
+    display: inline-block;
+    width: 100%;
+    color: rgba(255,255,255,0.75);
+    font-family: 'Abril Fatface', cursive;
+
+}
+
+h1 {
+    font-family: 'Abril Fatface', cursive;
+}
+
+hr {
+    border-top: 1px solid rgba(255,255,255,0.3);
+}
+
+
+
+ul.list-large {
+    font-size: 2.6em;
+    list-style-type: none;
+
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+    padding: 40px 8px;
+
+}
+
+.list-large-home {
+}
+
+.home-main-text {
+    margin-top: 20% !important;
+}
+
+blockquote {
+    padding: 40px 20px;
+    margin: 40px 0px;
+    font-size: 46px;
+    border-left: none;
+    line-height: 1;
+    color: #dbae2e;
+/*    border-top: 1px solid rgba(255,255,255,0.3);*/
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+
+}
+
+.white {
+    color: rgba(255,255,255,0.8);
+}
+
+h1.huge {
+    color: rgba(243,34,6,1.0) !important;
+    font-size: 72px;
+}
+
+.big-feature {
+    text-align: center;
+}
+
+.big-feature-panel {
+    margin: 150px 0 20px 0;
+}
+
+.alternate-content {
+    color: #fc0;
+}
+
+.giant {
+    font-family: 'Abril Fatface', cursive;
+    color: #5b7293;
+    font-size: 34px;
+    border-top: 1px solid rgba(255,255,255,0.3);
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+    margin: 40px 0;
+    padding: 40px;
+}
+
+blockquote p {
+
+    line-height: 1;
+}
+
+.quote-source {
+    font-size: 14px;
+    color: #ccc;
+}
+
+.text-block {
+    margin: 40px 0;
+    padding: 40px;
+    background: rgba(0,0,0,0.6)  ;
+    border-radius: 6px;
+    min-height: 400px;
+}
+
+table.icons tr td
+{
+    font-size: 22px;
+    padding: 20px;
+
+}
+
+.icons-big {
+    color: rgba(243,34,6,1.0) !important;
+    text-align: center;
+    display: block;
+}
+
+/*base fonts and colors*/
+
+a {
+    color: rgba(243,34,6,1.0);
+    cursor: pointer;
+
+}
+
+a:hover {
+    color: #d00;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+.red {
+    color: rgba(243,34,6,1.0) !important;
+}
+
+
+/*menus*/
+
+
+
+.page-rec {
+    padding: 90px;
+}
+
+.page-slider {
+    display: block;
+    list-style-type: none;
+    padding: 0;
+}
+
+/* header */
+.logo {
+    max-width: 331px;
+}
+
+.main-menu {
+    float: right;
+    margin-top: 30px;
+}
+
+.main-menu > li {
+    margin-left: 20px;
+}
+
+.main-menu > li > a {
+    padding-right: 0;
+    padding-left: 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff; /* IE8 proofing */
+    color: rgba(255, 255, 255, .95);
+    border-bottom: 2px solid transparent;
+    text-decoration: none;
+}
+
+.main-menu > li > a:hover,
+.main-menu > li > a:focus {
+    background-color: transparent;
+    border-bottom-color: rgba(255, 255, 255, .65);
+}
+
+.main-menu > .active > a,
+.main-menu > .active > a:hover,
+.main-menu > .active > a:focus {
+    color: #fff;
+    border-bottom-color: #fff;
+}
+
+
+
+
+@media only screen
+and (max-width : 768px) {
+    .main-menu {
+        float: left;
+    }
+
+    .navbar {
+        margin-bottom:0;
+    }
+
+    a.navbar-brand {
+        display:block;
+        margin: 0 0 0 0;
+    }
+
+    header {
+        padding-bottom: 0;
+    }
+
+    .navbar-header {
+        height: 80px;
+    }
+
+    .navbar-toggle {
+        margin: 18px 20px 0 0;
+    }
+
+    .social {
+        float: none;
+        color: #5b7293;
+        margin: 40px 0;
+
+    }
+
+    .social-text {
+        float: none;
+        border-top: 1px solid rgba(255,255,255,0.1);
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+        padding: 20px 10px;
+        display: block;
+        height: auto;
+        margin-bottom: 30px;
+    }
+    .social-icons{
+    float: none;
+        margin: 10px 0;
+    }
+
+    .text-block {
+        margin: 20px 20px;
+        padding: 40px;
+        background: rgba(0,0,0,0.6);
+        border-radius: 6px;
+        min-height: 400px;
+    }
+
+    .main-menu > li > a {
+        padding-right: 0;
+        padding-left: 0;
+        font-size: 16px;
+        font-weight: 600;
+        color: #fff; /* IE8 proofing */
+        color: rgba(255, 255, 255, .95);
+        border-bottom: 0px solid transparent;
+        text-decoration: none;
+    }
+
+    .main-menu {
+        padding-bottom: 30px;
+    }
+
+}
+
+
+
+
