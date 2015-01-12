@@ -218,7 +218,7 @@ h3#comments {
 }
 
 .gallery-caption {
-    color: #999;
+    color: #bbb;
     font-size: 0.8em;
     margin-top: 5px;
 }
@@ -422,10 +422,118 @@ a:hover {
 }
 
 
+ul.shows {
+    line-height: 1.5;
+    font-size: 1.6em;
+    color: #dbae2e;
+    list-style-type: none;
+    margin: 10px 0;
+    padding: 0;
+}
+
+ul.shows li {
+    padding: 20px 0;
+    border-bottom: 1px solid #333;
+}
+
+.gallery {
+    margin: 20px 0 !important;
+}
+
+/*playlists*/
+
+
+.wp-playlist-dark {
+    border: 0px solid #333 !important;
+    background: rgba(0,0,0, 0.7) !important;
+    border-radius: 5px;
+}
+
+.wp-playlist-item {
+    position: relative;
+    cursor: pointer;
+    padding: 10px 5px !important;
+    border-bottom: #ccc !important;
+}
+
+.wp-playlist-item-length {
+    right: 5px !important;
+    top: 10px !important;
+}
+
+.wp-playlist-playing, .wp-playlist-playing a, .wp-playlist-playing div  {
+    color: #5b7293 !important;
+}
+
+.wp-playlist-item-meta {
+    font-size: 12px !important;
+    color: #ccc !important;
+    text-align: right;
+    margin-right: 15px;
+}
+
+
+
+.wp-playlist {
+    position:relative;
+}
+
+.wp-playlist-current-item {
+    position:relative;
+    height: 200px !important;
+}
+
+.wp-playlist .wp-playlist-current-item  .wp-playlist-caption {
+    position:absolute !important;
+    left:0  !important;
+    bottom: 0;
+    max-width: 100%  !important;
+    width: 100%;
+    height: auto  !important;
+    margin-right: 10px;
+    padding: 10px 0;
+    border: 0;
+    z-index: 1;
+    background: rgba(0, 0, 0, .5);
+
+
+}
+
+.wp-playlist .wp-playlist-current-item img {
+    position:absolute !important;
+    max-width: 100%  !important;
+    height: auto  !important;
+    padding: 0;
+    border: 0;
+    z-index: 0;
+}
+
+.social a, .social a:hover, .copyright a, .copyright a:hover {
+
+    color: #5b7293 !important;
+
+}
+
+/* use a sprite file with darker transport icons */
+.mejs-controls .mejs-button button {
+    background-image: url('/wp-includes/js/mediaelement/controls.png') !important;
+}
+
 
 
 @media only screen
+and (max-width : 480px) {
+
+    .logo {
+        max-width: 190px;
+        margin-top: 10px;
+    }
+}
+
+@media only screen
 and (max-width : 768px) {
+
+
     .main-menu {
         float: left;
     }
@@ -451,6 +559,8 @@ and (max-width : 768px) {
         margin: 18px 20px 0 0;
     }
 
+
+
     .social {
         float: none;
         color: #5b7293;
@@ -467,6 +577,9 @@ and (max-width : 768px) {
         height: auto;
         margin-bottom: 30px;
     }
+
+
+
     .social-icons{
     float: none;
         margin: 10px 0;

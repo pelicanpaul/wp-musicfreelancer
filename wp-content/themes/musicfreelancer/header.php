@@ -7,7 +7,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
-
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
 	<?php wp_head(); ?>
 
@@ -36,7 +37,7 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="<?php echo home_url(); ?>">
-                    <?php // bloginfo('name'); ?><img src="/wp-content/themes/musicfreelancer/images/logo-kailyons.png" />
+                    <?php // bloginfo('name'); ?><img src="/wp-content/themes/musicfreelancer/images/logo-kailyons.png" class="img-responsive logo" />
                 </a>
             </div>
 
