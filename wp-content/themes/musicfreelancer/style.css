@@ -527,13 +527,17 @@ and (max-width : 480px) {
     .logo {
         max-width: 190px;
         margin-top: 10px;
-    }
+    }F
 }
 
 @media only screen
 and (max-width : 768px) {
 
-
+    .gallery-item {
+        float: none !important;
+        text-align: center;
+        width: 100%;
+    }
     .main-menu {
         float: left;
     }
@@ -564,7 +568,8 @@ and (max-width : 768px) {
     .social {
         float: none;
         color: #5b7293;
-        margin: 40px 0;
+        margin: 60px 0 0;
+        clear:both;
 
     }
 
@@ -575,14 +580,15 @@ and (max-width : 768px) {
         padding: 20px 10px;
         display: block;
         height: auto;
-        margin-bottom: 30px;
+        margin-bottom: 0;
     }
 
 
 
     .social-icons{
     float: none;
-        margin: 10px 0;
+    margin: 10px 0 30px 0;
+        height:auto;
     }
 
     .text-block {
