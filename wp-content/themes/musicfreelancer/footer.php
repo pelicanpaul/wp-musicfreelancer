@@ -32,5 +32,7 @@
             ?>
 
         </footer>
+
+        </div>
 </body>
 </html>

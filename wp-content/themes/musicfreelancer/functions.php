@@ -3,6 +3,14 @@ require_once('functions/wp_bootstrap_navwalker.php');
 require_once('functions/theme-functions.php');
 require_once('functions/comments.php');
 
+$args = array(
+    'width'         => 400,
+    'height'        => 60,
+    'default-image' => get_template_directory_uri() . '/images/logo.png',
+    'uploads'       => true,
+);
+add_theme_support( 'custom-header', $args );
+
 /*============================================
 Register navbar and sidebar
 =============================================*/

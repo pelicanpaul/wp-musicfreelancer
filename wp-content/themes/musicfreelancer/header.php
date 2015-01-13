@@ -23,7 +23,6 @@
 
 <div class="container-full">
 
-
     <header>
 
     <nav class="navbar navbar-inverse" role="navigation">
@@ -37,7 +36,7 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="<?php echo home_url(); ?>">
-                    <?php // bloginfo('name'); ?><img src="/wp-content/themes/musicfreelancer/images/logo-kailyons.png" class="img-responsive logo" />
+                    <?php // bloginfo('name'); ?><img src="<?php header_image(); ?>" class="img-responsive logo" />
                 </a>
             </div>
 
@@ -58,5 +57,6 @@
     </nav>
 
     </header>
+
     <div class="container">
 	<div id="main">
