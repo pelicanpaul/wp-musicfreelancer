@@ -527,7 +527,14 @@ and (max-width : 480px) {
     .logo {
         max-width: 190px;
         margin-top: 10px;
-    }F
+    }
+    .home-main-text {
+        margin-top: 30px !important;
+    }
+
+    .navbar-header {
+        height: 70px !important;
+    }
 }
 
 @media only screen
