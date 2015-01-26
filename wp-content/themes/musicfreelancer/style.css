@@ -3,12 +3,12 @@ Theme Name: Music Freelancer
 Theme URI: http://www.paullyons.info
 Author: Paul Lyons
 Author URI: http://www.paullyons.info
-Description: WordPress theme for Musicians
+Description: Music Freelancer theme is a clean, page and blog-focused, and designed for the musician who wants a no-frills site. Music Freelancer's simple, straightforward typography is readable on a wide variety of screen sizes, and suitable for multiple languages. We designed it using a mobile-first approach with Bootstrap 3.3, meaning your content takes center-stage, regardless of whether your visitors arrive by smartphone, tablet, laptop, or desktop computer. Uses ShadowBox jQuery Plugin and a custom implementation of wp-playlist Audio Player. The featured image for pages is utilized for full-screen background images.
 Version: 1.0
-License:
-License URI:
-Tags:
-Text Domain:
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: black, blue, gray,  dark, two-columns, left-sidebar,  responsive-layout, accessibility-ready, custom-background, custom-colors, custom-header, custom-menu
+Text Domain: musicfreelancer
 
 
 /**
@@ -17,14 +17,13 @@ Text Domain:
  */
 
 body {
-    background: url(/wp-content/uploads/2015/01/background-pattern-dark-825x510.jpg) no-repeat center center fixed;
+    background: url(/wp-content/uploads/background-pattern-dark.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     color: #fff;
     font-family: 'Open Sans', sans-serif;
-
 }
 
 p {
@@ -35,6 +34,64 @@ p {
     color: #999;
     margin: 16px 0;
 }
+
+/*base fonts and colors*/
+
+a {
+    color: rgba(243,34,6,1.0);
+    cursor: pointer;
+
+}
+
+a:hover {
+    color: #d00;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+h1 {
+    font-family: 'Abril Fatface', cursive;
+}
+
+h1.huge {
+    color: rgba(243,34,6,1.0) !important;
+    font-size: 72px;
+}
+
+h2 {
+    position:relative;
+    padding:10px 5px;
+    border-bottom:1px solid rgba(255,255,255,0.3);
+    display: inline-block;
+    width: 100%;
+    color: rgba(255,255,255,0.75);
+    font-family: 'Abril Fatface', cursive;
+}
+
+h3 {
+    position:relative;
+    padding:10px 5px;
+    border-bottom:1px solid rgba(255,255,255,0.3);
+    display: inline-block;
+    width: 100%;
+    color: rgba(255,255,255,0.75);
+    font-family: 'Abril Fatface', cursive;
+}
+
+.red {
+    color: rgba(243,34,6,1.0) !important;
+}
+
+.white {
+    color: rgba(255,255,255,0.8);
+}
+
+.muted {
+    color: #aaa;
+}
+
+
 
 /*layout*/
 
@@ -55,8 +112,6 @@ p {
     left: 0;
     right: 0;
     bottom: 0;
-
-
 }
 
 .attachment-post-thumbnail {
@@ -156,6 +211,9 @@ footer {
     margin: 0 8px 0 0;
 }
 
+/* End footer styles
+-------------------------------------------------- */
+
 ul.meta-post{
     list-style-type: none;
     margin: 20px 0;
@@ -169,10 +227,6 @@ ul.meta-post li{
    float: left;
    padding: 0 10px 0 10px;
 
-}
-
-.muted {
-    color: #aaa;
 }
 
 
@@ -224,39 +278,9 @@ h3#comments {
 }
 
 
-h2 {
-
-    position:relative;
-    padding:10px 5px;
-    border-bottom:1px solid rgba(255,255,255,0.3);
-    display: inline-block;
-    width: 100%;
-    color: rgba(255,255,255,0.75);
-    font-family: 'Abril Fatface', cursive;
-
-}
-
-h3 {
-
-    position:relative;
-    padding:10px 5px;
-    border-bottom:1px solid rgba(255,255,255,0.3);
-    display: inline-block;
-    width: 100%;
-    color: rgba(255,255,255,0.75);
-    font-family: 'Abril Fatface', cursive;
-
-}
-
-h1 {
-    font-family: 'Abril Fatface', cursive;
-}
-
 hr {
     border-top: 1px solid rgba(255,255,255,0.3);
 }
-
-
 
 ul.list-large {
     font-size: 2.6em;
@@ -287,14 +311,6 @@ blockquote {
 
 }
 
-.white {
-    color: rgba(255,255,255,0.8);
-}
-
-h1.huge {
-    color: rgba(243,34,6,1.0) !important;
-    font-size: 72px;
-}
 
 .big-feature {
     text-align: center;
@@ -319,7 +335,6 @@ h1.huge {
 }
 
 blockquote p {
-
     line-height: 1;
 }
 
@@ -349,24 +364,7 @@ table.icons tr td
     display: block;
 }
 
-/*base fonts and colors*/
 
-a {
-    color: rgba(243,34,6,1.0);
-    cursor: pointer;
-
-}
-
-a:hover {
-    color: #d00;
-    cursor: pointer;
-    text-decoration: none;
-}
-
-
-.red {
-    color: rgba(243,34,6,1.0) !important;
-}
 
 
 /*menus*/
@@ -442,7 +440,6 @@ ul.shows li {
 
 /*playlists*/
 
-
 .wp-playlist-dark {
     border: 0px solid #333 !important;
     background: rgba(0,0,0, 0.7) !important;
@@ -471,8 +468,6 @@ ul.shows li {
     text-align: right;
     margin-right: 15px;
 }
-
-
 
 .wp-playlist {
     position:relative;
@@ -509,7 +504,6 @@ ul.shows li {
 }
 
 .social a, .social a:hover, .copyright a, .copyright a:hover {
-
     color: #5b7293 !important;
 
 }
